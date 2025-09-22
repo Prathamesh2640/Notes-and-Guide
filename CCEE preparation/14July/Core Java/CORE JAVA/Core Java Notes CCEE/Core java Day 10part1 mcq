@@ -1,0 +1,87 @@
+Here are some CDAC DMC CCEE MCQ questions along with answers and code snippets related to Core Java and Exception Handling:
+
+Question: What is the output of the following Java code snippet?
+
+java
+Copy code
+public class TestException {
+    public static void main(String[] args) {
+        try {
+            throw new RuntimeException();
+        } catch (RuntimeException e) {
+            System.out.println("Caught RuntimeException");
+        } catch (Exception e) {
+            System.out.println("Caught Exception");
+        }
+    }
+}
+Options:
+A. Caught RuntimeException
+B. Caught Exception
+C. Compilation Error
+D. Runtime Error
+
+Answer: A. Caught RuntimeException
+
+Question: Which keyword is used in Java to throw an exception explicitly?
+
+Options:
+A. throws
+B. throw
+C. try
+D. catch
+
+Answer: B. throw
+
+Question: What is the output of the following Java program?
+
+java
+Copy code
+public class FinallyExample {
+    public static void main(String[] args) {
+        try {
+            System.out.println("Try block");
+            System.exit(0);
+        } finally {
+            System.out.println("Finally block");
+        }
+    }
+}
+Options:
+A. Try block
+Finally block
+B. Try block
+C. Finally block
+D. Compilation Error
+
+Answer: C. Finally block
+
+Question: What will happen if a method declares that it throws an IOException?
+
+Options:
+A. The method must catch IOException within its body.
+B. The method must be declared as throws IOException in its method signature.
+C. IOException is a checked exception and must be handled using a try-catch block.
+D. All of the above.
+
+Answer: D. All of the above.
+
+Question: Identify the correct statement about the try-with-resources statement in Java.
+
+Options:
+A. It is used for catching exceptions related to resources.
+B. It ensures that each resource is closed at the end of the statement.
+C. It automatically handles all exceptions that can occur during resource management.
+D. It is only applicable to java.io.Closeable resources.
+
+Answer: B. It ensures that each resource is closed at the end of the statement.
+
+Question: What is the purpose of the throws clause in Java?
+
+Options:
+A. It declares that a method may throw one or more exceptions.
+B. It forces a method to throw an exception when called.
+C. It specifies which exception should be caught by the calling method.
+D. It is used to handle exceptions within a method.
+
+Answer: A. It declares that a method may throw one or more exceptions.

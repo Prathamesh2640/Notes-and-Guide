@@ -1,0 +1,35 @@
+Question: What command is used to create a directory named "test" in Unix/Linux?
+
+A) make
+B) create test
+C) mkdir test
+D) newdir test
+Answer: C) mkdir test
+Question: Which command displays the current date and time?
+
+A) date
+B) time
+C) datetime
+D) now
+Answer: A) date
+Question: How do you display the contents of a file named "data.txt" in Unix/Linux?
+
+A) show data.txt
+B) cat data.txt
+C) print data.txt
+D) display data.txt
+Answer: B) cat data.txt
+Question: Which command is used to move a file named "file.txt" to a directory named "backup"?
+
+A) move file.txt backup
+B) cp file.txt backup
+C) mv file.txt backup
+D) copy file.txt backup
+Answer: C) mv file.txt backup
+Question: What does the command rm -r directory do?
+
+A) Removes a file named "directory"
+B) Removes all files in the directory named "directory"
+C) Removes a directory named "directory"
+D) Renames a directory to "directory"
+Answer: C) Removes a directory named "directory"

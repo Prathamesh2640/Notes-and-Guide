@@ -1,0 +1,138 @@
+
+Sure, here are some multiple-choice questions based on the provided content about Object-Oriented Programming with Java 8:
+
+Trainer Introduction
+Who is the trainer for the Object-Oriented Programming with Java 8 course?
+
+A. Dr. John Doe
+B. Dr. Akshita Chanchlani
+C. Mr. Mike Sheridan
+D. Dr. Patrick Naughton
+Answer: B. Dr. Akshita Chanchlani
+Which institution is Dr. Akshita Chanchlani associated with?
+
+A. Sun Microsystems
+B. Oracle
+C. Sunbeam Infotech
+D. VJTI Mumbai
+Answer: C. Sunbeam Infotech
+Java History and Versions
+Who initiated the Java language project?
+
+A. James Gosling, Mike Sheridan, and Patrick Naughton
+B. Bill Gates and Steve Jobs
+C. Tim Berners-Lee and Dennis Ritchie
+D. Bjarne Stroustrup and Guido van Rossum
+Answer: A. James Gosling, Mike Sheridan, and Patrick Naughton
+When was Java first released?
+
+A. 1991
+B. 1995
+C. 1996
+D. 2000
+Answer: B. 1995
+Java Platforms
+Which Java platform is also known as Core Java?
+
+A. Java SE
+B. Java EE
+C. Java ME
+D. Java Card
+Answer: A. Java SE
+Which Java platform is intended for mobile devices?
+
+A. Java SE
+B. Java EE
+C. Java ME
+D. Java Card
+Answer: C. Java ME
+SDK, JDK, JRE, JVM
+Which component contains the Java compiler?
+
+A. JRE
+B. JVM
+C. JDK
+D. SDK
+Answer: C. JDK
+What does JVM stand for?
+
+A. Java Virtual Machine
+B. Java Variable Manager
+C. Java Visual Monitor
+D. Java Version Manager
+Answer: A. Java Virtual Machine
+C++ vs. Java
+Which of the following features is NOT supported by Java?
+
+A. Pointers
+B. Operator overloading
+C. Multiple inheritance
+D. All of the above
+Answer: D. All of the above
+Which statement is true about Java's approach to memory management?
+
+A. Java uses manual memory management.
+B. Java has built-in garbage collection.
+C. Java requires explicit pointers.
+D. Java uses conditional compilation.
+Answer: B. Java has built-in garbage collection.
+Language Basics
+Which of the following is a keyword in Java?
+
+A. implement
+B. implements
+C. Implement
+D. IMPLEMENT
+Answer: B. implements
+How do you start the execution of a Java application?
+
+A. By calling the init method
+B. By running the constructor
+C. By invoking the main method
+D. By invoking the run method
+Answer: C. By invoking the main method
+Documentation and Installation
+Where can you download the JDK?
+
+A. https://adoptopenjdk.net/
+B. https://github.com/spring-projects/toolsuite-distribution
+C. https://www.journaldev.com
+D. https://www.baeldung.com
+Answer: A. https://adoptopenjdk.net/
+Which tool is used to extract documentation comments to HTML files in Java?
+
+A. javadoc
+B. javac
+C. java
+D. javap
+Answer: A. javadoc
+Java Streams and Execution
+Which standard stream object in Java represents the keyboard input?
+
+A. System.out
+B. System.in
+C. System.err
+D. System.log
+Answer: B. System.in
+What is the role of the Garbage Collector thread in Java?
+
+A. To execute the main method
+B. To allocate memory
+C. To deallocate memory of unused objects
+D. To manage input and output streams
+Answer: C. To deallocate memory of unused objects
+Java Application Structure
+What is the extension of Java bytecode files?
+
+A. .java
+B. .class
+C. .exe
+D. .jar
+Answer: B. .class
+Which component of JVM manages the execution of Java applications?
+
+A. JRE
+B. JDK
+C. SDK
+D. JVM
+Answer: D. JVM

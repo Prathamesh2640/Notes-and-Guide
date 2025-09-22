@@ -1,0 +1,81 @@
+
+Memory updated
+It seems like you're looking for CDAC DMC CCEE MCQ questions and code snippets related to multithreading in Java. Here are some questions with answers:
+
+MCQ Questions with Answers on Multithreading in Java
+What is a thread in Java?
+
+A. A process that runs independently of the main program.
+B. A method inside a class that runs concurrently with other methods.
+C. An instance of a class that extends java.lang.Thread.
+D. None of the above.
+Answer: A. A process that runs independently of the main program.
+Which of the following statements is true about Java threads?
+
+A. Every Java application must create at least one thread.
+B. Threads in Java are managed entirely by the operating system.
+C. Java threads can only be created using the Thread class.
+D. Java threads are light-weight processes.
+Answer: D. Java threads are light-weight processes.
+What is the purpose of the sleep() method in Java threads?
+
+A. To pause the execution of the current thread for a specified time.
+B. To terminate the current thread immediately.
+C. To yield the CPU to another thread.
+D. To synchronize access to shared resources.
+Answer: A. To pause the execution of the current thread for a specified time.
+What happens when join() method is called on a thread?
+
+A. It suspends the current thread until the called thread completes.
+B. It forcefully terminates the called thread.
+C. It checks if the thread is alive.
+D. It sets the priority of the thread.
+Answer: A. It suspends the current thread until the called thread completes.
+What is a daemon thread in Java?
+
+A. A thread that executes only one task.
+B. A thread that executes continuously in the background.
+C. A thread that cannot be interrupted.
+D. A thread with higher priority.
+Answer: B. A thread that executes continuously in the background.
+Code Snippets
+Example 1: Creating a Thread using Runnable
+java
+Copy code
+public class MyRunnable implements Runnable {
+    public void run() {
+        System.out.println("Thread is running.");
+    }
+
+    public static void main(String[] args) {
+        MyRunnable myRunnable = new MyRunnable();
+        Thread thread = new Thread(myRunnable);
+        thread.start();
+    }
+}
+Example 2: Using sleep() and interrupt() methods
+java
+Copy code
+public class SleepInterruptExample {
+    public static void main(String[] args) {
+        Thread thread = new Thread(() -> {
+            try {
+                System.out.println("Thread started.");
+                Thread.sleep(5000); // Sleep for 5 seconds
+                System.out.println("Thread woke up.");
+            } catch (InterruptedException e) {
+                System.out.println("Thread interrupted.");
+            }
+        });
+
+        thread.start();
+        // Interrupt the thread after 3 seconds
+        try {
+            Thread.sleep(3000);
+            thread.interrupt();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}
+These examples and questions should help you reinforce your understanding of multithreading concepts in Java.

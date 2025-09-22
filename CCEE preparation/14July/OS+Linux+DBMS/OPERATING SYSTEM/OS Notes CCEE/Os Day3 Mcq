@@ -1,0 +1,39 @@
+Question: What is the purpose of IPC mechanisms in operating systems?
+
+A) Direct memory access between processes.
+B) Sharing of memory segments across processes.
+C) Communication between processes.
+D) Managing CPU scheduling.
+Answer: C) Communication between processes.
+
+Question: Which Unix/Linux command is used to create a named pipe?
+
+A) mkfifo
+B) pipe
+C) createpipe
+D) mknod
+Answer: A) mkfifo
+
+Question: What does the msgget() system call do in Unix/Linux IPC?
+
+A) Send a message to another process.
+B) Receive a message from another process.
+C) Create a message queue.
+D) Destroy a message queue.
+Answer: C) Create a message queue.
+
+Question: Which signal is sent to a process when the user presses CTRL+C?
+
+A) SIGTERM
+B) SIGKILL
+C) SIGINT
+D) SIGHUP
+Answer: C) SIGINT
+
+Question: In Unix/Linux, which syscall is used to create a socket?
+
+A) socket()
+B) create_socket()
+C) open_socket()
+D) bind_socket()
+Answer: A) socket()

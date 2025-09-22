@@ -1,0 +1,679 @@
+Session 1 & 2: Java Language and its Features
+MCQ Questions:
+Question: What does JVM stand for?
+A) Java Virtual Machine
+B) Java Virtual Memory
+C) Java Variable Method
+D) None of the above
+Answer: A) Java Virtual Machine
+Question: What is the purpose of JDK in Java?
+A) Java Development Kernel
+B) Java Development Kit
+C) Java Design Kit
+D) Java Development Key
+Answer: B) Java Development Kit
+Code Snippet:
+java
+Copy code
+// First Java Program
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+Session 3 & 4: Introduction to OOPs Concepts
+MCQ Questions:
+Question: What is the role of constructors in Java?
+A) To initialize the object of a class
+B) To destroy the object of a class
+C) To declare variables in a class
+D) To perform mathematical operations
+Answer: A) To initialize the object of a class
+Question: Which keyword is used to create an instance of a class in Java?
+A) new
+B) this
+C) class
+D) void
+Answer: A) new
+Code Snippet:
+java
+Copy code
+// Simple Calculator Program
+public class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+    
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+    
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        int result = calc.add(10, 5);
+        System.out.println("Result of addition: " + result);
+    }
+}
+
+
+Session 1 & 2: Java Language and its Features
+MCQ Questions:
+Question: What does JVM stand for?
+A) Java Virtual Machine
+B) Java Virtual Memory
+C) Java Variable Method
+D) None of the above
+Answer: A) Java Virtual Machine
+Question: What is the purpose of JDK in Java?
+A) Java Development Kernel
+B) Java Development Kit
+C) Java Design Kit
+D) Java Development Key
+Answer: B) Java Development Kit
+Code Snippet:
+java
+Copy code
+// First Java Program
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+Session 3 & 4: Introduction to OOPs Concepts
+MCQ Questions:
+Question: What is the role of constructors in Java?
+A) To initialize the object of a class
+B) To destroy the object of a class
+C) To declare variables in a class
+D) To perform mathematical operations
+Answer: A) To initialize the object of a class
+Question: Which keyword is used to create an instance of a class in Java?
+A) new
+B) this
+C) class
+D) void
+Answer: A) new
+Code Snippet:
+java
+Copy code
+// Simple Calculator Program
+public class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+    
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+    
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        int result = calc.add(10, 5);
+        System.out.println("Result of addition: " + result);
+    }
+}
+
+
+Session 10: Methods, Overloading, Memory Management
+MCQ Questions:
+Question: What is method overloading in Java?
+A) Having multiple methods with the same name but different return types
+B) Having multiple methods with the same name and parameters but different method body
+C) Having multiple methods with different names but same parameters
+D) None of the above
+Answer: B) Having multiple methods with the same name and parameters but different method body
+Question: What is the role of the this keyword in Java?
+A) Refers to the current instance of a class
+B) Refers to the current class itself
+C) Used to call a superclass method
+D) Used to access static variables
+Answer: A) Refers to the current instance of a class
+Code Snippet:
+java
+Copy code
+// Method Overloading example
+class Calculator {
+    void add(int a, int b) {
+        System.out.println("Sum: " + (a + b));
+    }
+    
+    void add(double a, double b) {
+        System.out.println("Sum: " + (a + b));
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        calc.add(5, 10);
+        calc.add(3.5, 2.5);
+    }
+}
+Session 11: Packages, Access Control, Inheritance
+MCQ Questions:
+Question: Which of the following access modifiers restricts access the most in Java?
+A) public
+B) protected
+C) private
+D) default (package-private)
+Answer: C) private
+Question: What is the IS-A relationship in Java?
+A) It denotes inheritance or implementation relationship
+B) It denotes aggregation or composition relationship
+C) It denotes a dependency relationship
+D) It denotes a bidirectional relationship
+Answer: A) It denotes inheritance or implementation relationship
+Code Snippet:
+java
+Copy code
+// Package and Access Control example
+package com.company.organization; // Package declaration
+
+public class Employee {
+    protected int empId; // Protected member
+    
+    protected void displayEmpDetails() { // Protected method
+        System.out.println("Employee ID: " + empId);
+    }
+}
+
+package com.company.testers; // Another package
+
+import com.company.organization.Employee;
+
+public class EmpTester extends Employee {
+    public static void main(String[] args) {
+        EmpTester emp = new EmpTester();
+        emp.empId = 101; // Accessing protected member
+        emp.displayEmpDetails(); // Accessing protected method
+    }
+}
+Session 12: Polymorphism, Abstract Classes, Interfaces
+MCQ Questions:
+Question: Which keyword is used to implement interfaces in Java classes?
+A) extends
+B) implements
+C) inherits
+D) uses
+Answer: B) implements
+Question: Can an abstract class have non-abstract methods?
+A) Yes
+B) No
+C) Only if it doesn't have any abstract methods
+D) Abstract classes cannot have methods
+Answer: A) Yes
+Code Snippet:
+java
+Copy code
+// Polymorphism and Interface example
+interface Animal {
+    void sound();
+}
+
+class Dog implements Animal {
+    public void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal animal = new Dog();
+        animal.sound(); // Outputs: Dog barks
+    }
+}
+Session 13 & 14: Inner Classes, Exception Handling
+MCQ Questions:
+Question: Which keyword is used to specify exception types that a method can throw?
+A) try
+B) catch
+C) throws
+D) throw
+Answer: C) throws
+Question: What is the difference between checked and unchecked exceptions in Java?
+A) Checked exceptions are checked at compile-time, whereas unchecked exceptions are not
+B) Checked exceptions are caused by programmer errors, whereas unchecked exceptions are caused by system errors
+C) Checked exceptions are subclasses of RuntimeException, whereas unchecked exceptions are subclasses of Exception
+D) Checked exceptions are thrown explicitly, whereas unchecked exceptions are thrown implicitly
+Answer: A) Checked exceptions are checked at compile-time, whereas unchecked exceptions are not
+Code Snippet:
+java
+Copy code
+// Inner Classes and Exception Handling example
+class Outer {
+    private int data = 100;
+    
+    class Inner {
+        void display() {
+            System.out.println("Data: " + data);
+        }
+    }
+    
+    void methodWithException() throws Exception {
+        if (data == 100) {
+            throw new Exception("Data is 100");
+        }
+    }
+    
+    public static void main(String[] args) {
+        Outer outer = new Outer();
+        Outer.Inner inner = outer.new Inner();
+        inner.display();
+        
+        try {
+            outer.methodWithException();
+        } catch (Exception e) {
+            System.out.println("Exception: " + e.getMessage());
+        }
+    }
+}
+
+
+
+Session 15 & 16: String Handling, Wrapper Classes, Collection Framework
+MCQ Questions:
+Question: Which of the following classes in Java is not a wrapper class?
+
+A) Integer
+B) Double
+C) String
+D) Character
+Answer: C) String
+Question: What is the difference between StringBuffer and StringBuilder in Java?
+
+A) StringBuffer is synchronized, whereas StringBuilder is not
+B) StringBuffer is faster than StringBuilder
+C) StringBuilder is synchronized, whereas StringBuffer is not
+D) There is no difference; they are interchangeable
+Answer: A) StringBuffer is synchronized, whereas StringBuilder is not
+Code Snippet:
+java
+Copy code
+// String and StringBuilder example
+public class StringDemo {
+    public static void main(String[] args) {
+        // String example
+        String str1 = "Hello";
+        String str2 = "World";
+        String str3 = str1 + " " + str2;
+        System.out.println("Concatenated String: " + str3);
+        
+        // StringBuilder example
+        StringBuilder sb = new StringBuilder();
+        sb.append("Java");
+        sb.append(" is");
+        sb.append(" awesome");
+        System.out.println("StringBuilder Output: " + sb.toString());
+    }
+}
+Session 17, 18 & 19: Generics, Collection Framework
+MCQ Questions:
+Question: What is the purpose of using generics in Java?
+A) To enhance code readability
+B) To ensure type safety at compile-time
+C) To allow dynamic binding of types
+D) To reduce memory consumption
+Answer: B) To ensure type safety at compile-time
+Question: Which interface in Java Collection Framework does not allow duplicate elements?
+A) List
+B) Set
+C) Map
+D) Queue
+Answer: B) Set
+Code Snippet:
+java
+Copy code
+// Generics and Collection Framework example
+import java.util.*;
+
+public class GenericExample {
+    public static void main(String[] args) {
+        // Generic class example
+        List<String> names = new ArrayList<>();
+        names.add("Alice");
+        names.add("Bob");
+        names.add("Charlie");
+        
+        // Collection interface example
+        Set<Integer> numbers = new HashSet<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        
+        System.out.println("Names: " + names);
+        System.out.println("Numbers: " + numbers);
+    }
+}
+Session 20 & 21: File Handling, Serialization
+
+
+
+MCQ Questions:
+
+Question: Which class in Java is used for object serialization?
+
+A) ObjectStream
+B) Serializable
+C) ObjectWriter
+D) ObjectOutputStream
+Answer: D) ObjectOutputStream
+
+Question: What is the purpose of using byte streams and character streams in Java I/O?
+
+A) Byte streams are for handling binary data, while character streams are for handling text data
+B) Byte streams are for handling text data, while character streams are for handling binary data
+C) Byte streams are faster than character streams
+D) Character streams are faster than byte streams
+Answer: A) Byte streams are for handling binary data, while character streams are for handling text data
+Code Snippet:
+java
+Copy code
+// File Handling and Serialization example
+import java.io.*;
+
+class Employee implements Serializable {
+    private static final long serialVersionUID = 1L;
+    String name;
+    double salary;
+    
+    public Employee(String name, double salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+    
+    public String toString() {
+        return "Name: " + name + ", Salary: " + salary;
+    }
+}
+
+public class SerializationExample {
+    public static void main(String[] args) {
+        Employee emp = new Employee("John Doe", 50000.0);
+        
+        try {
+            // Serialization
+            FileOutputStream fileOut = new FileOutputStream("employee.ser");
+            ObjectOutputStream out = new ObjectOutputStream(fileOut);
+            out.writeObject(emp);
+            out.close();
+            fileOut.close();
+            
+            // Deserialization
+            FileInputStream fileIn = new FileInputStream("employee.ser");
+            ObjectInputStream in = new ObjectInputStream(fileIn);
+            Employee empDeserialized = (Employee) in.readObject();
+            in.close();
+            fileIn.close();
+            
+            System.out.println("Deserialized Employee: " + empDeserialized);
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+
+Session 22 & 23: Multithreaded Programming
+MCQ Questions:
+Question: Which interface in Java is used to implement multithreading?
+
+A) Runnable
+B) Callable
+C) Threadable
+D) Executor
+Answer: A) Runnable
+Question: What is the purpose of synchronization in Java multithreading?
+
+A) To prevent race conditions and ensure thread safety
+B) To increase the speed of thread execution
+C) To synchronize thread creation
+D) To implement thread pooling
+Answer: A) To prevent race conditions and ensure thread safety
+Code Snippet:
+java
+Copy code
+// Multithreading example using Runnable
+class MyRunnable implements Runnable {
+    public void run() {
+        System.out.println("Thread running: " + Thread.currentThread().getName());
+    }
+}
+
+public class ThreadExample {
+    public static void main(String[] args) {
+        MyRunnable runnable = new MyRunnable();
+        Thread thread1 = new Thread(runnable);
+        Thread thread2 = new Thread(runnable);
+        
+        thread1.start();
+        thread2.start();
+    }
+}
+Session 24 & 25: Java Network Programming
+MCQ Questions:
+Q0uestion: Which Java class is used to represent both client-side and server-side sockets?
+
+A) Socket
+B) ServerSocket
+C) DatagramSocket
+D) InetAddress
+Answer: A) Socket
+Question: What is the purpose of InetAddress class in Java network programming?
+
+A) To represent IP addresses
+B) To perform socket operations
+C) To handle UDP packets
+D) To manage HTTP connections
+Answer: A) To represent IP addresses
+Code Snippet:
+java
+Copy code
+// Java Network Programming example - Server side
+import java.io.*;
+import java.net.*;
+
+public class ServerExample {
+    public static void main(String[] args) {
+        try {
+            ServerSocket serverSocket = new ServerSocket(12345);
+            System.out.println("Server listening on port 12345...");
+            
+            while (true) {
+                Socket socket = serverSocket.accept();
+                System.out.println("Client connected: " + socket);
+                
+                // Handle client in a new thread
+                ClientHandler handler = new ClientHandler(socket);
+                handler.start();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+class ClientHandler extends Thread {
+    private Socket socket;
+    
+    public ClientHandler(Socket socket) {
+        this.socket = socket;
+    }
+    
+    public void run() {
+        try {
+            // Data processing logic here
+            PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            
+            // Example: echo server
+            String inputLine;
+            while ((inputLine = in.readLine()) != null) {
+                out.println("Server: " + inputLine);
+            }
+            
+            socket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+Session 26 & 27: Database Access and JDBC
+MCQ Questions:
+
+Question: Which interface in Java is used to represent a connection to a database?
+
+A) DriverManager
+B) Connection
+C) Statement
+D) ResultSet
+Answer: B) Connection
+Question: What is the purpose of PreparedStatement in JDBC?
+
+A) To execute simple SQL statements
+B) To execute stored procedures
+C) To execute parameterized SQL queries
+D) To execute scrollable result sets
+Answer: C) To execute parameterized SQL queries
+Code Snippet:
+java
+Copy code
+// JDBC example - Connecting to MySQL database
+import java.sql.*;
+
+public class JDBCExample {
+    public static void main(String[] args) {
+        String jdbcURL = "jdbc:mysql://localhost:3306/mydatabase";
+        String username = "root";
+        String password = "password";
+        
+        try {
+            Connection connection = DriverManager.getConnection(jdbcURL, username, password);
+            System.out.println("Connected to the database!");
+            
+            // Execute SQL queries, process results
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM employees");
+            
+            while (resultSet.next()) {
+                String name = resultSet.getString("name");
+                double salary = resultSet.getDouble("salary");
+                System.out.println("Name: " + name + ", Salary: " + salary);
+            }
+            
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}
+Session 28 & 29: Java 8 Features - Interfaces, Lambdas, Streams
+MCQ Questions:
+Question: What is the purpose of default methods in Java interfaces introduced in Java 8?
+
+A) To enforce single inheritance in interfaces
+B) To provide backward compatibility for existing interfaces
+C) To define methods with default implementations in interfaces
+D) To allow static methods in interfaces
+Answer: C) To define methods with default implementations in interfaces
+Question: Which functional interface in Java 8 represents a function that takes one argument and produces a result?
+
+A) Consumer
+B) Supplier
+C) Function
+D) Predicate
+Answer: C) Function
+Code Snippet:
+java
+Copy code
+// Java 8 features example - Lambda expressions and Stream API
+import java.util.*;
+
+public class StreamExample {
+    public static void main(String[] args) {
+        List<String> names = Arrays.asList("Alice", "Bob", "Charlie", "David");
+        
+        // Filter names starting with 'A'
+        names.stream()
+             .filter(name -> name.startsWith("A"))
+             .forEach(System.out::println);
+        
+        // Convert names to uppercase
+        List<String> upperCaseNames = names.stream()
+                                          .map(String::toUpperCase)
+                                          .collect(Collectors.toList());
+        System.out.println("Upper case names: " + upperCaseNames);
+        
+        // Calculate sum of lengths of all names
+        int totalLength = names.stream()
+                               .mapToInt(String::length)
+                               .sum();
+        System.out.println("Total length of all names: " + totalLength);
+    }
+}
+Session 30: Reflection, Annotations, Proxy
+MCQ Questions:
+Question: What is the main purpose of Java Reflection?
+
+A) To create dynamic proxies
+B) To introspect and manipulate classes at runtime
+C) To handle runtime exceptions
+D) To serialize and deserialize objects
+Answer: B) To introspect and manipulate classes at runtime
+Question: Which annotation retention policy specifies that the annotation should be available at runtime?
+
+A) @Retention(RetentionPolicy.SOURCE)
+B) @Retention(RetentionPolicy.CLASS)
+C) @Retention(RetentionPolicy.RUNTIME)
+D) @Retention(RetentionPolicy.STATIC)
+Answer: C) @Retention(RetentionPolicy.RUNTIME)
+Code Snippet:
+java
+Copy code
+// Java Reflection and Proxy example
+import java.lang.reflect.*;
+
+interface Account {
+    void deposit(double amount);
+    void withdraw(double amount);
+}
+
+class SavingsAccount implements Account {
+    public void deposit(double amount) {
+        System.out.println("Depositing: " + amount);
+    }
+    public void withdraw(double amount) {
+        System.out.println("Withdrawing: " + amount);
+    }
+}
+
+class AccountInvocationHandler implements InvocationHandler {
+    private Object realObject;
+    
+    public AccountInvocationHandler(Object realObject) {
+        this.realObject = realObject;
+    }
+    
+    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        System.out.println("Method: " + method.getName());
+        if (method.getName().equals("deposit")) {
+            System.out.println("Logging deposit action");
+        } else if (method.getName().equals("withdraw")) {
+            System.out.println("Logging withdraw action");
+        }
+        return method.invoke(realObject, args);
+    }
+}
+
+public class ProxyExample {
+    public static void main(String[] args) {
+        SavingsAccount realObject = new SavingsAccount();
+        Account proxyObject = (Account) Proxy.newProxyInstance(
+                ProxyExample.class.getClassLoader(),
+                new Class[] { Account.class },
+                new AccountInvocationHandler(realObject));
+        
+        proxyObject.deposit(1000);
+        proxyObject.withdraw(500);
+    }
+}
+

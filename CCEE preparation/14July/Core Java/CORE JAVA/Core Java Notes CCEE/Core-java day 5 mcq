@@ -1,0 +1,88 @@
+Arrays
+What is an array in Java?
+
+a) A linear data structure to store elements of different types.
+b) A collection to store elements of the same type in continuous memory.
+c) A data type to store elements of different sizes dynamically.
+d) A built-in class in Java to manage memory allocation.
+Answer: b) A collection to store elements of the same type in continuous memory.
+Which of the following is a disadvantage of arrays in Java?
+
+a) Random access of elements.
+b) Requires continuous memory allocation.
+c) Dynamic resizing capability.
+d) Fast insertion and deletion operations.
+Answer: b) Requires continuous memory allocation.
+What will be the output of the following code snippet?
+
+java
+Copy code
+int[] arr = new int[3];
+System.out.println(arr.length);
+a) 0
+b) 1
+c) 2
+d) 3
+Answer: d) 3
+Which exception is thrown when trying to access an element with an index that is out of bounds?
+
+a) ArrayIndexOutOfBoundsException
+b) IndexOutOfBoundsException
+c) ArrayStoreException
+d) NullPointerException
+Answer: a) ArrayIndexOutOfBoundsException
+How do you initialize a multidimensional array in Java?
+
+a) int[][] arr = new int[3, 3];
+b) int[][] arr = new int[3][3];
+c) int[][] arr = new int[3];
+d) int[][] arr = new int[][3];
+Answer: b) int[][] arr = new int[3][3];
+Enums
+What is an enum in Java used for?
+
+a) To define a group of constants with predefined values.
+b) To create instances of classes dynamically.
+c) To manage memory allocation efficiently.
+d) To handle exceptions in Java programs.
+Answer: a) To define a group of constants with predefined values.
+How are enum constants declared in Java?
+
+a) In lowercase letters separated by commas.
+b) In uppercase letters separated by commas.
+c) Using enum keyword followed by the constant values.
+d) Using the const keyword followed by the constant values.
+Answer: b) In uppercase letters separated by commas.
+Which method returns the ordinal of an enum constant?
+
+a) name()
+b) value()
+c) ordinal()
+d) index()
+Answer: c) ordinal()
+Code Snippets
+What will be the output of the following code snippet?
+
+java
+Copy code
+enum Day {
+    MONDAY, TUESDAY, WEDNESDAY
+}
+
+public class Test {
+    public static void main(String[] args) {
+        System.out.println(Day.TUESDAY.ordinal());
+    }
+}
+a) 0
+b) 1
+c) 2
+d) Error
+Answer: c) 2
+Which of the following correctly initializes and declares an array in Java?
+
+a) int[] arr = new int[3] {1, 2, 3};
+b) int[] arr = {1, 2, 3};
+c) int[] arr = new int[] {1, 2, 3};
+d) All of the above
+Answer: c) int[] arr = new int[] {1, 2, 3};

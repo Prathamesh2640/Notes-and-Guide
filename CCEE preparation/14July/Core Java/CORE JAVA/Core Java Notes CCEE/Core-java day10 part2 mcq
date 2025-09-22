@@ -1,0 +1,82 @@
+Core Java MCQ Questions:
+What is the output of the following Java code snippet?
+
+java
+Copy code
+public class Test {
+    public static void main(String[] args) {
+        String s1 = "Hello";
+        String s2 = "Hello";
+        System.out.println(s1 == s2);
+    }
+}
+A) true
+B) false
+C) Compilation Error
+D) Runtime Error
+Answer: A) true
+
+Which statement is true about interfaces in Java?
+
+A) Interfaces can contain instance fields.
+B) Interfaces can extend multiple interfaces.
+C) Interfaces can have private methods.
+D) Interfaces can be instantiated using the new keyword.
+Answer: B) Interfaces can extend multiple interfaces.
+
+What is the correct way to declare a constant in Java that can be accessed across different classes without creating an instance of the class?
+
+A) static final int CONSTANT_VALUE = 10;
+B) final static int CONSTANT_VALUE = 10;
+C) final int CONSTANT_VALUE = 10;
+D) int CONSTANT_VALUE = 10;
+Answer: A) static final int CONSTANT_VALUE = 10;
+
+Exception Handling MCQ Questions:
+What will happen if an exception is thrown from inside the try block and there is no corresponding catch block to handle it?
+
+A) The program will terminate.
+B) The exception will be ignored.
+C) The exception will be caught by the finally block.
+D) The exception will be caught by the JVM.
+Answer: A) The program will terminate.
+
+Which of the following statements about finally block is correct?
+
+A) finally block is executed only if an exception is caught.
+B) finally block is optional in every try-catch statement.
+C) finally block can modify the return value of a method.
+D) finally block is executed even if there is a return statement in the try or catch block.
+Answer: D) finally block is executed even if there is a return statement in the try or catch block.
+
+Generic Programming MCQ Questions:
+Which of the following statements about generics in Java is correct?
+
+A) Generics allow primitive types to be used as type parameters.
+B) Generics eliminate the need for type casting.
+C) Generics are only applicable to classes, not to interfaces.
+D) Generics can only be used with collections like ArrayList and HashMap.
+Answer: B) Generics eliminate the need for type casting.
+
+What is the output of the following Java code snippet?
+
+java
+Copy code
+class Box<T> {
+    private T t;
+    public void set(T t) { this.t = t; }
+    public T get() { return t; }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Box<Integer> integerBox = new Box<>();
+        integerBox.set(10);
+        System.out.println(integerBox.get());
+    }
+}
+A) 10
+B) Compilation Error
+C) Runtime Error
+D) null
+Answer: A) 10

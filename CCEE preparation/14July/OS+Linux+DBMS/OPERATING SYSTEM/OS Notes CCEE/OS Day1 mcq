@@ -1,0 +1,37 @@
+Question: What is the primary role of an Operating System?
+
+A) Managing hardware resources
+B) Executing application programs
+C) Providing user interfaces
+D) All of the above
+Answer: D) All of the above
+Question: Which of the following is not a state of a process in Linux?
+
+A) TASK_RUNNING (R)
+B) TASK_PAUSED (P)
+C) TASK_UNINTERRUPTIBLE (D)
+D) TASK_ZOMBIE (Z)
+Answer: B) TASK_PAUSED (P)
+Question: What does a super block (Volume Control Block) contain?
+
+A) Information about CPU scheduling
+B) Information about file system capacity and label
+C) Information about process execution
+D) Information about network connections
+Answer: B) Information about file system capacity and label
+Question: Which command is used to format a partition with ext3 file system in Linux?
+
+A) mkfs -t ext3 /dev/sdb1
+B) format /dev/sdb1 ext3
+C) fsck -t ext3 /dev/sdb1
+D) mount -t ext3 /dev/sdb1
+Answer: A) mkfs -t ext3 /dev/sdb1
+Question: What is the function of the inode in UNIX/Linux file systems?
+
+A) Stores file contents
+B) Stores file metadata
+C) Manages disk partitions
+D) Handles CPU scheduling
+Answer: B) Stores file metadata
+
+

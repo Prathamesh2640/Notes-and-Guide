@@ -1,0 +1,89 @@
+Question 1:
+Which interface is the root interface in the Collection Framework hierarchy?
+
+a) List
+b) Collection
+c) Set
+d) Map
+
+Answer: b) Collection
+
+Question 2:
+Which method is used to add an element to a Collection in Java?
+
+a) put()
+b) add()
+c) insert()
+d) push()
+
+Answer: b) add()
+
+Question 3:
+What is the main purpose of the Collection Framework in Java?
+
+a) To manage data in RAM efficiently
+b) To manage data on disk
+c) To manage data in network communication
+d) To manage data in a database
+
+Answer: a) To manage data in RAM efficiently
+
+Question 4:
+Which of the following interfaces extends the Collection interface and represents an ordered collection in Java?
+
+a) Queue
+b) List
+c) Set
+d) Deque
+
+Answer: b) List
+
+Question 5:
+Which concrete class in Java's Collection Framework uses a resizable array to implement the List interface?
+
+a) Vector
+b) Stack
+c) LinkedList
+d) TreeSet
+
+Answer: a) Vector
+
+Code Snippet 1:
+java
+Copy code
+import java.util.*;
+
+public class Example {
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Orange");
+        
+        for (String fruit : list) {
+            System.out.println(fruit);
+        }
+    }
+}
+Explanation:
+This code snippet demonstrates the usage of ArrayList (a resizable array implementation of List) to store and iterate over a list of fruits.
+
+Code Snippet 2:
+java
+Copy code
+import java.util.*;
+
+public class Example {
+    public static void main(String[] args) {
+        Set<Integer> set = new HashSet<>();
+        set.add(10);
+        set.add(20);
+        set.add(30);
+        
+        System.out.println("Set size: " + set.size());
+    }
+}
+Explanation:
+This code snippet shows the usage of HashSet (an unordered Set implementation) to store integers and prints the size of the set.
+
+These examples cover basic operations and concepts related to the Collection Framework in Java. Let me know if you need more examples or explanations!

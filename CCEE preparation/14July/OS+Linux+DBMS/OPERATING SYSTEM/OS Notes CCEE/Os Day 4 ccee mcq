@@ -1,0 +1,39 @@
+Question: Which symbol is used to begin comments in a shell script?
+
+A) //
+B) --
+C) #
+D) /*
+Answer: C) #
+
+Question: What does the shebang line #!/bin/bash indicate in a shell script?
+
+A) It comments out the script.
+B) It specifies the location of Bash executable.
+C) It declares the shell interpreter to execute the script.
+D) It defines a new function in Bash.
+Answer: C) It declares the shell interpreter to execute the script.
+
+Question: How can you assign the output of a command to a variable in a shell script?
+
+A) varname=$(command ...)
+B) varname=command ...``
+C) varname=command ...``
+D) varname=$(command ...)
+Answer: A) varname=$(command ...)
+
+Question: Which command is used to declare an array in a shell script?
+
+A) array[]
+B) declare array
+C) array=()
+D) set array
+Answer: C) array=()
+
+Question: What does $# represent in a shell script?
+
+A) Total number of parameters passed to the script.
+B) The name of the script file.
+C) The first positional parameter.
+D) The number of elements in an array.
+Answer: A) Total number of parameters passed to the script.

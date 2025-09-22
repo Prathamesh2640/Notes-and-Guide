@@ -1,0 +1,56 @@
+Question: What is upcasting in Java?
+
+A) Converting a subclass object to a superclass reference.
+B) Converting a superclass object to a subclass reference.
+C) Converting primitive data types.
+D) Converting reference data types.
+Answer: A) Converting a subclass object to a superclass reference.
+Question: When is downcasting safe in Java?
+
+A) Always safe if the types are related.
+B) Only safe if done implicitly.
+C) Requires the use of instanceof operator to check.
+D) Downcasting is never safe.
+Answer: C) Requires the use of instanceof operator to check.
+Polymorphism
+Question: What is polymorphism in Java?
+A) The ability to have multiple constructors in a class.
+B) The ability of a method to be present in multiple classes.
+C) The ability of an object to take many forms.
+D) The ability to have private methods in a class.
+Answer: C) The ability of an object to take many forms.
+Method Binding
+Question: Which type of method binding occurs during method overloading in Java?
+A) Dynamic Binding.
+B) Early Binding.
+C) Late Binding.
+D) Static Binding.
+Answer: D) Static Binding.
+Interface
+Question: Which keyword is used to implement an interface in Java?
+A) extend
+B) implement
+C) inherits
+D) extends
+Answer: B) implement
+Abstract Class
+Question: Which of the following statements is true about abstract classes in Java?
+A) An abstract class cannot have any abstract methods.
+B) An abstract class can be instantiated.
+C) Abstract classes cannot inherit from other classes.
+D) Abstract classes must have all methods implemented.
+Answer: D) Abstract classes must have all methods implemented.
+Nested Classes
+Question: What type of nested class cannot access static members of its enclosing class without an instance?
+A) Static Nested Class.
+B) Inner Class.
+C) Local Class.
+D) Anonymous Class.
+Answer: B) Inner Class.
+Annotation
+Question: Which annotation in Java indicates that a method is intended to override a superclass method?
+A) @Override
+B) @Overload
+C) @Inherit
+D) @Extend
+Answer: A) @Override

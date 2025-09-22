@@ -1,0 +1,134 @@
+Which MySQL tool is used for database design and management through a graphical user interface?
+
+a) MySQL Command Line Client
+b) MySQL Workbench
+c) MySQL Notifier
+d) MySQL Connectors
+Answer: b) MySQL Workbench
+
+What is the primary function of MySQL Notifier?
+
+a) Integration with Microsoft Excel
+b) Connecting MySQL with other programming languages
+c) Monitoring MySQL servers
+d) Writing stored procedures
+Answer: c) Monitoring MySQL servers
+
+MySQL Data Types
+Which of the following is not a character string data type in MySQL?
+
+a) CHAR
+b) VARCHAR
+c) BLOB
+d) INT
+Answer: d) INT
+
+Which data type is used to store large binary objects in MySQL?
+
+a) BINARY
+b) VARBINARY
+c) BLOB
+d) ENUM
+Answer: c) BLOB
+
+Basic SQL Commands
+Which SQL command is used to create a new table in MySQL?
+
+a) INSERT
+b) SELECT
+c) CREATE TABLE
+d) ALTER TABLE
+Answer: c) CREATE TABLE
+
+What is the correct syntax to insert a record into the 'emp' table?
+
+a) INSERT INTO emp VALUES ('1', 'Amit', 5000, 'Mumbai', '1995-05-04');
+b) ADD INTO emp VALUES ('1', 'Amit', 5000, 'Mumbai', '1995-05-04');
+c) INSERT RECORD INTO emp VALUES ('1', 'Amit', 5000, 'Mumbai', '1995-05-04');
+d) ADD RECORD INTO emp VALUES ('1', 'Amit', 5000, 'Mumbai', '1995-05-04');
+Answer: a) INSERT INTO emp VALUES ('1', 'Amit', 5000, 'Mumbai', '1995-05-04');
+
+Functions
+Which function is used to concatenate two strings in MySQL?
+
+a) CONCAT()
+b) LENGTH()
+c) UPPER()
+d) SUBSTR()
+Answer: a) CONCAT()
+
+What is the result of SELECT ROUND(123.456);?
+
+a) 123.456
+b) 124
+c) 123.5
+d) 123
+Answer: d) 123
+
+Sub-Queries and Indexes
+Which of the following is a correct use of a sub-query in MySQL?
+
+a) SELECT ename FROM emp WHERE sal > (SELECT MAX(sal) FROM emp);
+b) SELECT ename FROM emp WHERE sal > MAX(sal);
+c) SELECT ename FROM emp HAVING sal > (SELECT MAX(sal) FROM emp);
+d) SELECT ename FROM emp ORDER BY (SELECT MAX(sal) FROM emp);
+Answer: a) SELECT ename FROM emp WHERE sal > (SELECT MAX(sal) FROM emp);
+
+How do you drop an index named 'indexname' from the 'emp' table?
+
+a) REMOVE INDEX indexname FROM emp;
+b) DROP INDEX indexname ON emp;
+c) DELETE INDEX indexname ON emp;
+d) ALTER TABLE emp REMOVE INDEX indexname;
+Answer: b) DROP INDEX indexname ON emp;
+
+Alter Table and Constraints
+Which command is used to add a new column 'panno' to the 'emp' table?
+
+a) ALTER TABLE emp ADD panno CHAR(10);
+b) MODIFY TABLE emp ADD panno CHAR(10);
+c) ALTER emp ADD panno CHAR(10);
+d) ADD COLUMN panno CHAR(10) TO emp;
+Answer: a) ALTER TABLE emp ADD panno CHAR(10);
+
+What command do you use to disable foreign key checks in MySQL?
+
+a) SET FOREIGN_KEY_CHECKS = 0;
+b) DISABLE FOREIGN_KEY_CHECKS;
+c) ALTER TABLE emp DROP FOREIGN KEY CHECKS;
+d) SET FOREIGN_KEY_CHECKS TO OFF;
+Answer: a) SET FOREIGN_KEY_CHECKS = 0;
+
+MySQL-PL (Stored Procedures, Functions, Loops, If Statements)
+What is the correct syntax to create a stored procedure in MySQL?
+
+a) CREATE PROCEDURE proc_name() BEGIN ... END;
+b) CREATE FUNCTION proc_name() BEGIN ... END;
+c) CREATE PROCEDURE proc_name() { ... }
+d) CREATE FUNCTION proc_name() { ... }
+Answer: a) CREATE PROCEDURE proc_name() BEGIN ... END;
+
+How do you define a variable inside a stored procedure?
+
+a) DECLARE var_name TYPE;
+b) SET var_name TYPE;
+c) DEFINE var_name TYPE;
+d) VAR var_name TYPE;
+Answer: a) DECLARE var_name TYPE;
+
+Exercises and Examples
+Which query displays all the data from the table 'S'?
+
+a) SHOW * FROM S;
+b) DISPLAY * FROM S;
+c) SELECT * FROM S;
+d) VIEW * FROM S;
+Answer: c) SELECT * FROM S;
+
+How do you create a procedure to compute the perimeter and area of a rectangle in MySQL?
+
+a) DELIMITER // CREATE PROCEDURE rectangle() BEGIN ... END // DELIMITER ;
+b) DELIMITER ; CREATE PROCEDURE rectangle() { ... } DELIMITER ;
+c) CREATE FUNCTION rectangle() { ... }
+d) CREATE PROCEDURE rectangle() BEGIN ... END;
+Answer: a) DELIMITER // CREATE PROCEDURE rectangle() BEGIN ... END // DELIMITER ;

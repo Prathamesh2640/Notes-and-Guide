@@ -1,0 +1,412 @@
+
+Session 1: Introduction to DBMS
+MCQ Questions:
+What is the primary purpose of a Database Management System (DBMS)?
+
+A) Data analysis
+B) Data storage and retrieval
+C) Web development
+D) Operating system management
+Answer: B) Data storage and retrieval
+Which of the following is a key advantage of using a DBMS?
+
+A) Reduced data redundancy
+B) Faster programming
+C) Better web design
+D) Increased data redundancy
+Answer: A) Reduced data redundancy
+What does RDBMS stand for?
+
+A) Relational Database Management System
+B) Rational Database Management System
+C) Reduced Database Management System
+D) Redundant Database Management System
+Answer: A) Relational Database Management System
+Code Snippet MCQ:
+What will the following SQL statement do?
+sql
+Copy code
+CREATE TABLE students (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT
+);
+A) Create a database
+B) Create a table named 'students' with three columns
+C) Insert data into the 'students' table
+D) Delete the 'students' table
+Answer: B) Create a table named 'students' with three columns
+Session 2: Data Models and ER Diagrams
+MCQ Questions:
+Which of the following is NOT a type of data model?
+
+A) Conceptual
+B) Logical
+C) Physical
+D) Virtual
+Answer: D) Virtual
+What does an ER Diagram represent?
+
+A) Database queries
+B) Database relationships and entities
+C) Data storage mechanisms
+D) User interfaces
+Answer: B) Database relationships and entities
+Codd’s 12 rules are related to which type of database system?
+
+A) NoSQL
+B) Object-Oriented
+C) Relational
+D) Hierarchical
+Answer: C) Relational
+Code Snippet MCQ:
+What does the following SQL snippet create?
+sql
+Copy code
+CREATE TABLE department (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(50) NOT NULL
+);
+A) A relationship between two tables
+B) An entity representing a department
+C) A stored procedure
+D) An index on a table
+Answer: B) An entity representing a department
+Session 3: Normalization
+MCQ Questions:
+What is the goal of normalization in database design?
+
+A) To reduce data redundancy and improve data integrity
+B) To increase data redundancy
+C) To create more tables
+D) To simplify database queries
+Answer: A) To reduce data redundancy and improve data integrity
+Which normal form eliminates transitive dependencies?
+
+A) First Normal Form (1NF)
+B) Second Normal Form (2NF)
+C) Third Normal Form (3NF)
+D) Boyce-Codd Normal Form (BCNF)
+Answer: C) Third Normal Form (3NF)
+What is a characteristic of a table in First Normal Form (1NF)?
+
+A) No repeating groups or arrays
+B) No partial dependencies
+C) No transitive dependencies
+D) No multivalued attributes
+Answer: A) No repeating groups or arrays
+Code Snippet MCQ:
+Which of the following tables is in 1NF?
+sql
+Copy code
+CREATE TABLE students (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    courses VARCHAR(100) -- Comma-separated list of courses
+);
+A) The table is in 1NF
+B) The table is not in 1NF because it contains repeating groups
+C) The table is in 2NF
+D) The table is in BCNF
+Answer: B) The table is not in 1NF because it contains repeating groups
+Session 4: DDL, DML, and DCL Commands
+MCQ Questions:
+Which of the following is a DDL command?
+
+A) SELECT
+B) INSERT
+C) CREATE
+D) UPDATE
+Answer: C) CREATE
+Which command is used to remove a table from a database?
+
+A) DROP TABLE
+B) DELETE TABLE
+C) REMOVE TABLE
+D) TRUNCATE TABLE
+Answer: A) DROP TABLE
+What does the ROLLBACK command do?
+
+A) Commits the current transaction
+B) Ends the current session
+C) Reverts the database to the last committed state
+D) Saves the current state of the database
+Answer: C) Reverts the database to the last committed state
+Code Snippet MCQ:
+What will the following SQL statement do?
+sql
+Copy code
+INSERT INTO students (id, name, age) VALUES (1, 'John Doe', 20);
+A) Create a new table
+B) Delete a row from the 'students' table
+C) Insert a new row into the 'students' table
+D) Update an existing row in the 'students' table
+Answer: C) Insert a new row into the 'students' table
+Session 5 & 6: Inbuilt Functions and Grouping
+MCQ Questions:
+Which of the following is an aggregate function in SQL?
+
+A) ABS()
+B) COUNT()
+C) LENGTH()
+D) LOWER()
+Answer: B) COUNT()
+What does the GROUP BY clause do in an SQL query?
+
+A) Sorts the result set
+B) Groups rows that have the same values in specified columns
+C) Filters rows based on a condition
+D) Limits the number of rows returned
+Answer: B) Groups rows that have the same values in specified columns
+Which of the following functions returns the highest value in a column?
+
+A) MIN()
+B) MAX()
+C) AVG()
+D) SUM()
+Answer: B) MAX()
+Code Snippet MCQ:
+What will the following SQL query return?
+sql
+Copy code
+SELECT COUNT(*), AVG(age) FROM students GROUP BY gender;
+A) The total number of students and their average age
+B) The total number of students grouped by gender and their average age per gender
+C) The number of male and female students
+D) The average age of male and female students
+Answer: B) The total number of students grouped by gender and their average age per gender
+Session 7: SQL Operators
+MCQ Questions:
+Which SQL operator is used to filter records that match a specified pattern?
+
+A) IN
+B) BETWEEN
+C) LIKE
+D) DISTINCT
+Answer: C) LIKE
+What does the DISTINCT keyword do in an SQL query?
+
+A) Selects all records from a table
+B) Eliminates duplicate records from the result set
+C) Sorts the result set
+D) Filters records based on a condition
+Answer: B) Eliminates duplicate records from the result set
+Which of the following is a relational algebra operation?
+
+A) Selection
+B) JOIN
+C) UNION
+D) All of the above
+Answer: D) All of the above
+Code Snippet MCQ:
+What will the following SQL query return?
+sql
+Copy code
+SELECT name FROM students WHERE age BETWEEN 18 AND 22;
+A) All student names
+B) Names of students aged between 18 and 22
+C) Names of students aged 18 or 22
+D) Names of students older than 22
+Answer: B) Names of students aged between 18 and 22
+Session 8 & 9: SQL Functions and Aggregates
+MCQ Questions:
+Which of the following is NOT an aggregate function?
+
+A) SUM()
+B) AVG()
+C) MIN()
+D) UPPER()
+Answer: D) UPPER()
+What is the purpose of the HAVING clause in SQL?
+
+A) To filter records before grouping
+B) To filter records after grouping
+C) To sort the result set
+D) To join tables
+Answer: B) To filter records after grouping
+Which SQL function returns the remainder of a division operation?
+
+A) MOD()
+B) DIV()
+C) REM()
+D) ROUND()
+Answer: A) MOD()
+Code Snippet MCQ:
+What will the following SQL query return?
+sql
+Copy code
+SELECT gender, AVG(age) FROM students GROUP BY gender HAVING AVG(age) > 20;
+A) The average age of all students
+B) The gender and average age of students where the average age is greater than 20
+C) The total number of students grouped by gender
+D) The average age of male students
+Answer: B) The gender and average age of students where the average age is greater than 20
+Session 10 & 11: Subqueries and Joins
+MCQ Questions:
+Which type of join returns all rows when there is a match in either table?
+
+A) INNER JOIN
+B) LEFT JOIN
+C) RIGHT JOIN
+D) FULL JOIN
+Answer: D) FULL JOIN
+Which type of subquery can be used to compare each row of the outer query with multiple rows of the inner query?
+
+A) Non-correlated subquery
+B) Correlated subquery
+C) Scalar subquery
+D) Inline subquery
+Answer: B) Correlated subquery
+What is the result of the following SQL query?
+
+sql
+Copy code
+SELECT * FROM employees e1 WHERE salary > (SELECT AVG(salary) FROM employees e2 WHERE e1.department_id = e2.department_id);
+A) Employees earning less than the average salary
+B) Employees earning more than the average salary in their department
+C) Average salary of employees
+D) All employees in a department
+Answer: B) Employees earning more than the average salary in their department
+Code Snippet MCQ:
+What will the following SQL query return?
+sql
+Copy code
+SELECT e1.name, e2.name FROM employees e1 JOIN employees e2 ON e1.manager_id = e2.id;
+A) Names of employees and their managers
+B) Names of employees and their subordinates
+C) Names of employees with the same manager
+D) Names of employees in the same department
+Answer: A) Names of employees and their managers
+Session 12: Views and Indexes
+MCQ Questions:
+What is a view in SQL?
+
+A) A physical table
+B) A virtual table based on the result of a SELECT query
+C) A stored procedure
+D) An index on a table
+Answer: B) A virtual table based on the result of a SELECT query
+Which type of index is created automatically when a primary key is defined?
+
+A) Unique index
+B) Composite index
+C) Clustered index
+D) Non-clustered index
+Answer: C) Clustered index
+What is the purpose of creating an index on a table column?
+
+A) To enforce uniqueness
+B) To increase query performance
+C) To store data more efficiently
+D) To define relationships between tables
+Answer: B) To increase query performance
+Code Snippet MCQ:
+What will the following SQL query do?
+sql
+Copy code
+CREATE VIEW active_students AS SELECT id, name FROM students WHERE status = 'active';
+A) Create a new table called 'active_students'
+B) Create a new view called 'active_students' based on the specified SELECT query
+C) Insert data into the 'active_students' table
+D) Update the 'students' table
+Answer: B) Create a new view called 'active_students' based on the specified SELECT query
+Session 13: Stored Procedures
+MCQ Questions:
+What is a stored procedure in SQL?
+
+A) A precompiled collection of SQL statements
+B) A type of index
+C) A type of trigger
+D) A view
+Answer: A) A precompiled collection of SQL statements
+Which of the following is NOT a parameter type in a stored procedure?
+
+A) IN
+B) OUT
+C) INOUT
+D) THROUGH
+Answer: D) THROUGH
+What is the main benefit of using stored procedures?
+
+A) Improved performance and security
+B) Simplified table creation
+C) Enhanced indexing
+D) Easier data entry
+Answer: A) Improved performance and security
+Code Snippet MCQ:
+What does the following SQL statement create?
+sql
+Copy code
+CREATE PROCEDURE update_salary (IN emp_id INT, IN new_salary DECIMAL)
+BEGIN
+    UPDATE employees SET salary = new_salary WHERE id = emp_id;
+END;
+A) A view to update employee salaries
+B) A stored procedure to update employee salaries
+C) A trigger to update employee salaries
+D) A function to update employee salaries
+Answer: B) A stored procedure to update employee salaries
+Session 14: Introduction to NoSQL
+MCQ Questions:
+What is a key characteristic of NoSQL databases?
+
+A) Structured data
+B) Fixed schema
+C) Schema-less data storage
+D) Table-based data storage
+Answer: C) Schema-less data storage
+Which of the following is a type of NoSQL database?
+
+A) Relational database
+B) Column-family database
+C) Object-oriented database
+D) Hierarchical database
+Answer: B) Column-family database
+What is one advantage of NoSQL databases over traditional RDBMS?
+
+A) Better support for complex queries
+B) High flexibility in handling unstructured data
+C) Improved data normalization
+D) Enhanced transaction support
+Answer: B) High flexibility in handling unstructured data
+Code Snippet MCQ:
+What type of data model is used in a document-oriented NoSQL database?
+A) Key-Value
+B) Document
+C) Column-Family
+D) Graph
+Answer: B) Document
+Session 15: Introduction to MongoDB
+MCQ Questions:
+What is MongoDB?
+
+A) A relational database
+B) A document-oriented NoSQL database
+C) A key-value store
+D) A column-family database
+Answer: B) A document-oriented NoSQL database
+Which command is used to insert a document into a MongoDB collection?
+
+A) db.collection.insertOne()
+B) db.collection.add()
+C) db.collection.create()
+D) db.collection.insertDocument()
+Answer: A) db.collection.insertOne()
+Which of the following is a valid MongoDB query operator?
+
+A) $eq
+B) $and
+C) $or
+D) All of the above
+Answer: D) All of the above
+Code Snippet MCQ:
+What will the following MongoDB command do?
+js
+Copy code
+db.students.updateOne({ name: 'John' }, { $set: { age: 21 } });
+A) Update the age of all students named John
+B) Update the age of the first student named John
+C) Delete the student named John
+D) Insert a new student named John
+Answer: B) Update the age of the first student named John
+These questions and code snippets cover the essential topics of each session and can be used for preparation and practice for the CDAC DMC CCEE exams.

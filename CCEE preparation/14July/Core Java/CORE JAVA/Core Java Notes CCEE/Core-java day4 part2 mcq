@@ -1,0 +1,250 @@
+Here are multiple-choice questions (MCQs) based on the provided content along with code snippets where applicable. Each question is followed by the correct answer.
+
+Package
+Which of the following is a primary purpose of using packages in Java?
+
+a) To write more lines of code.
+b) To avoid naming conflicts.
+c) To decrease the code readability.
+d) To complicate code structure.
+Answer: b) To avoid naming conflicts.
+What is the keyword used to define a package in Java?
+
+a) import
+b) include
+c) package
+d) namespace
+Answer: c) package
+Consider the fully qualified class name java.util.Scanner. What is java in this context?
+
+a) Sub-package
+b) Type name
+c) Main package
+d) Class
+Answer: c) Main package
+What is an unnamed package?
+
+a) A package with a blank name.
+b) A package created without the package keyword.
+c) A package containing a single class.
+d) The default package when no package is specified.
+Answer: d) The default package when no package is specified.
+Naming Convention
+What is the general convention for writing package names in Java?
+
+a) All uppercase letters
+b) Mixed case with underscores
+c) All lowercase letters
+d) Camel case
+Answer: c) All lowercase letters
+Which of the following is an example of a qualified package name using a reserved internet domain?
+
+a) com.example.mypackage
+b) example.com.mypackage
+c) mypackage.example.com
+d) example.mypackage.com
+Answer: a) com.example.mypackage
+Using Package Members
+What is the correct way to import all the classes in a package named mypackage?
+
+a) import mypackage;
+b) import mypackage.*;
+c) include mypackage.*;
+d) package mypackage.*;
+Answer: b) import mypackage.*;
+Which of the following is a less common form of import in Java that allows importing nested classes?
+
+a) import nested class;
+b) import java.lang;
+c) import java.util.Scanner;
+d) import static java.lang.Math.*;
+Answer: d) import static java.lang.Math.*;
+Example 1
+According to Java Language Specification (JLS), what must be true about the name of a public type and the name of the .java file?
+a) They must be different.
+b) They must be the same.
+c) They can be either same or different.
+d) The .java file must contain multiple public types.
+Answer: b) They must be the same.
+Static Import
+Which of the following statements about static import is true?
+a) Static import is used to import instance methods.
+b) Static import is used to import static members of a class.
+c) Static import can only import methods, not fields.
+d) Static import is mandatory for using static methods.
+Answer: b) Static import is used to import static members of a class.
+Code Snippets
+What will be the output of the following code?
+
+java
+Copy code
+package p1;
+public class Complex {
+    public String toString() {
+        return "Complex.toString()";
+    }
+}
+java
+Copy code
+class Program {
+    public static void main(String[] args) {
+        p1.Complex c = new p1.Complex();
+        System.out.println(c);
+    }
+}
+a) Compilation error
+b) Complex@hashcode
+c) Complex.toString()
+d) Program.class not found
+Answer: c) Complex.toString()
+What will be the output of the following code if Program.java is not in any package and Complex.java is in package p1?
+
+java
+Copy code
+// Complex.java
+package p1;
+public class Complex {
+    public String toString() {
+        return "Complex.toString()";
+    }
+}
+java
+Copy code
+// Program.java
+public class Program {
+    public static void main(String[] args) {
+        p1.Complex c = new p1.Complex();
+        System.out.println(c);
+    }
+}
+a) Compilation error
+b) Complex@hashcode
+c) Complex.toString()
+d) p1.Complex not found
+Answer: c) Complex.toString()
+What will be the output of the following code?
+
+java
+Copy code
+package p1;
+public class A {
+    public void display() {
+        System.out.println("A's display()");
+    }
+}
+java
+Copy code
+package p2;
+import p1.A;
+public class B {
+    public static void main(String[] args) {
+        A a = new A();
+        a.display();
+    }
+}
+a) Compilation error
+b) A's display()
+c) Runtime error
+d) A not found in p1
+Answer: b) A's display()
+What is the correct way to import the List class from java.util package?
+
+a) import java.util.*;
+b) import java.util.List;
+c) import List;
+d) import java.util.*.List;
+Answer: b) import java.util.List;
+What will be the output of the following code when run with the correct classpath setup?
+
+java
+Copy code
+package com.example;
+public class Example {
+    public void show() {
+        System.out.println("Example show()");
+    }
+}
+java
+Copy code
+public class Test {
+    public static void main(String[] args) {
+        com.example.Example ex = new com.example.Example();
+        ex.show();
+    }
+}
+a) Compilation error
+b) Example show()
+c) Runtime error
+d) com.example not found
+Answer: b) Example show()
+What will be the output of the following code if Example.java is in package com.example and Test.java is not in any package?
+
+java
+Copy code
+// Example.java
+package com.example;
+public class Example {
+    public void show() {
+        System.out.println("Example show()");
+    }
+}
+java
+Copy code
+// Test.java
+public class Test {
+    public static void main(String[] args) {
+        com.example.Example ex = new com.example.Example();
+        ex.show();
+    }
+}
+a) Compilation error
+b) Example show()
+c) Runtime error
+d) com.example not found
+Answer: b) Example show()
+What will be the output of the following code?
+
+java
+Copy code
+package p1;
+public class Complex {
+    public String toString() {
+        return "Complex.toString()";
+    }
+}
+java
+Copy code
+package p2;
+import p1.Complex;
+public class Program {
+    public static void main(String[] args) {
+        Complex c = new Complex();
+        System.out.println(c);
+    }
+}
+a) Compilation error
+b) Complex@hashcode
+c) Complex.toString()
+d) p1.Complex not found
+Answer: c) Complex.toString()
+Which of the following statements is true about unnamed packages?
+
+a) Unnamed packages are suitable for large applications.
+b) Unnamed packages can have sub-packages.
+c) Unnamed packages are provided for convenience in small or temporary applications.
+d) Unnamed packages require import statements.
+Answer: c) Unnamed packages are provided for convenience in small or temporary applications.
+Which of the following is true about default access modifier in Java?
+
+a) It allows access only within the same class.
+b) It allows access within the same package.
+c) It allows access from any package.
+d) It allows access from subclasses only.
+Answer: b) It allows access within the same package.
+What is the correct way to define a package in a Java source file?
+
+a) package;
+b) package name;
+c) package name.subname;
+d) package name.subname.classname;
+Answer: c) package name.subname;

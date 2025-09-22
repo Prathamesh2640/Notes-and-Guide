@@ -1,0 +1,186 @@
+Which of the following is true about the Object class in Java?
+
+a) It is a final class.
+b) It is declared in the java.util package.
+c) It is the ultimate base class of the Java class hierarchy.
+d) It contains nested types.
+Answer: c) It is the ultimate base class of the Java class hierarchy.
+
+How many methods does the Object class contain?
+
+a) 10
+b) 11
+c) 12
+d) 13
+Answer: b) 11
+
+Which of the following is a valid instantiation of the Object class?
+
+a) Object o = new Object("Hello");
+b) Object o = new Object();
+c) Object o = new Object[10];
+d) Object o = new Object<>();
+Answer: b) Object o = new Object();
+
+Methods of Object Class
+Which method of the Object class is used to obtain the runtime class of an object?
+
+a) toString()
+b) hashCode()
+c) getClass()
+d) clone()
+Answer: c) getClass()
+
+Which method in the Object class is called to deallocate resources before an object is garbage collected?
+
+a) finalize()
+b) clone()
+c) notify()
+d) wait()
+Answer: a) finalize()
+toString() Method
+What is the return type of the toString() method in the Object class?
+
+a) int
+b) String
+c) Object
+d) void
+Answer: b) String
+
+What is the default implementation of the toString() method in the Object class?
+
+a) Returns the object's state in string form.
+b) Returns null.
+c) Returns F.Q.ClassName@HashCode.
+d) Returns the object's hash code.
+Answer: c) Returns F.Q.ClassName@HashCode.
+Final Variable
+
+In Java, which keyword is used to declare a constant variable?
+
+a) const
+b) static
+c) final
+d) volatile
+Answer: c) final
+Which of the following is true about a final variable?
+
+a) Its value can be modified after initialization.
+b) It must be initialized at compile time.
+c) It can be initialized at runtime.
+d) It cannot be declared inside a method.
+Answer: c) It can be initialized at runtime.
+Static Field
+Which statement is true about static fields in Java?
+
+a) Each instance of a class has its own copy of a static field.
+b) Static fields are also called instance variables.
+c) Static fields are shared among all instances of a class.
+d) Static fields are initialized each time an instance is created.
+Answer: c) Static fields are shared among all instances of a class.
+Where do static fields get space during the class loading?
+
+a) On the heap.
+b) In the method area.
+c) On the stack.
+d) In the instance area.
+Answer: b) In the method area.
+Static Initialization Block
+What is the purpose of a static initialization block?
+
+a) To initialize instance variables.
+b) To define instance methods.
+c) To initialize static fields.
+d) To declare final variables.
+Answer: c) To initialize static fields.
+Which of the following statements is true about static initialization blocks?
+
+a) They are called when an instance is created.
+b) They are executed in the order they appear in the class.
+c) They can only appear once in a class.
+d) They cannot contain any method calls.
+Answer: b) They are executed in the order they appear in the class.
+Static Method
+
+Which of the following statements is true about static methods in Java?
+
+a) Static methods can access instance variables directly.
+b) Static methods do not receive this reference.
+c) Static methods can be overridden.
+d) Static methods can only be called on instances.
+Answer: b) Static methods do not receive this reference.
+What is the correct way to call a static method in Java?
+
+a) instance.methodName();
+b) ClassName.methodName();
+c) this.methodName();
+d) super.methodName();
+Answer: b) ClassName.methodName();
+Static Import
+What is the purpose of static import in Java?
+
+a) To import static members from another class.
+b) To import instance members from another class.
+c) To make all methods static in the current class.
+d) To prevent the use of instance members.
+Answer: a) To import static members from another class.
+Which of the following is a correct usage of static import?
+
+a) import static java.util.List;
+b) import java.util.List.static;
+c) import static java.lang.Math.*;
+d) import static java.util.*;
+Answer: c) import static java.lang.Math.*;
+Code Snippets
+What will be the output of the following code?
+
+java
+Copy code
+class Test {
+    static int x = 10;
+    public static void main(String[] args) {
+        System.out.println(x);
+    }
+}
+a) Compilation error
+b) 0
+c) 10
+d) Runtime error
+Answer: c) 10
+What will be the output of the following code?
+
+java
+Copy code
+class Test {
+    static int x;
+    static {
+        x = 5;
+    }
+    public static void main(String[] args) {
+        System.out.println(x);
+    }
+}
+a) Compilation error
+b) 0
+c) 5
+d) Runtime error
+Answer: c) 5
+What will be the output of the following code?
+
+java
+Copy code
+class Test {
+    static int x;
+    static {
+        x = 10;
+    }
+    public static void main(String[] args) {
+        Test t = new Test();
+        System.out.println(t.x);
+    }
+}
+a) Compilation error
+b) 0
+c) 10
+d) Runtime error
+Answer: c) 10

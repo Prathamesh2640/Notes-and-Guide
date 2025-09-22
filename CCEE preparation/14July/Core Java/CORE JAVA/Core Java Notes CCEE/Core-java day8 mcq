@@ -1,0 +1,123 @@
+MCQ Questions:
+Inheritance in Java:
+Which of the following statements about inheritance in Java is true?
+
+A) Java supports multiple inheritance using the extends keyword.
+B) Private members of the superclass are directly accessible in the subclass.
+C) Java classes can extend multiple classes to inherit their properties.
+D) All classes in Java inherit from the Object class implicitly.
+Answer: D
+
+Superclass and Subclass Relationship:
+In Java, which keyword is used to signify that one class inherits from another?
+
+A) inherits
+B) extends
+C) inherits-from
+D) subclass
+Answer: B
+
+Method Overriding:
+Which term describes the ability of a subclass to provide a specific implementation of a method that is already provided by its superclass?
+
+A) Overloading
+B) Overriding
+C) Inheriting
+D) Extending
+Answer: B
+
+Constructor in Inheritance:
+When a subclass constructor is invoked, which constructor of the superclass is called first?
+
+A) The default constructor of the superclass.
+B) The parameterless constructor of the superclass.
+C) The constructor with parameters of the superclass.
+D) The constructor with the same name in the superclass.
+Answer: B
+
+Code Snippets:
+Basic Inheritance Example:
+
+java
+Copy code
+// Superclass
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+// Subclass inheriting from Animal
+class Dog extends Animal {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.sound(); // Output: Animal makes a sound
+    }
+}
+Method Overriding Example:
+
+java
+Copy code
+// Superclass
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+// Subclass overriding sound() method
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+    
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.sound(); // Output: Dog barks
+    }
+}
+Constructor Invocation in Inheritance:
+
+java
+Copy code
+// Superclass
+class Animal {
+    Animal() {
+        System.out.println("Animal constructor called");
+    }
+}
+
+// Subclass extending Animal
+class Dog extends Animal {
+    Dog() {
+        System.out.println("Dog constructor called");
+    }
+    
+    public static void main(String[] args) {
+        Dog myDog = new Dog(); // Output: Animal constructor called
+                               //         Dog constructor called
+    }
+}
+Using super Keyword:
+
+java
+Copy code
+// Superclass
+class Animal {
+    Animal() {
+        System.out.println("Animal constructor called");
+    }
+}
+
+// Subclass using super to call superclass constructor
+class Dog extends Animal {
+    Dog() {
+        super(); // Calls superclass constructor
+        System.out.println("Dog constructor called");
+    }
+    
+    public static void main(String[] args) {
+        Dog myDog = new Dog(); // Output: Animal constructor called
+                               //         Dog constructor called
+    }
+}

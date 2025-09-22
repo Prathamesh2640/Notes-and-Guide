@@ -1,0 +1,47 @@
+What does the ps command do in Unix/Linux?
+
+A. Prints the current directory.
+B. Lists all running processes.
+C. Shows system uptime.
+D. Displays user information.
+Answer: B. Lists all running processes.
+What does the wc command do in Unix/Linux?
+
+A. Counts the number of lines in a file.
+B. Displays the content of a file.
+C. Lists files and directories.
+D. Copies files and directories.
+Answer: A. Counts the number of lines in a file.
+What does the grep command do in Unix/Linux?
+
+A. Searches for a pattern in files.
+B. Renames files based on a pattern.
+C. Deletes files matching a pattern.
+D. Prints environment variables.
+Answer: A. Searches for a pattern in files.
+What is the purpose of the cut command in Unix/Linux?
+
+A. Cuts text from one file and pastes it into another.
+B. Cuts specific parts (columns) from lines of input.
+C. Cuts directories recursively.
+D. Cuts the first few lines from a file.
+Answer: B. Cuts specific parts (columns) from lines of input.
+What does the sort command do in Unix/Linux?
+
+A. Searches for files in a directory.
+B. Sorts lines of text alphabetically.
+C. Concatenates files.
+D. Counts characters in a file.
+Answer: B. Sorts lines of text alphabetically.
+Code Snippets
+Example 1: Using grep to Search for Patterns
+bash
+Copy code
+# Search for lines containing "is" in taste.txt
+grep "is" taste.txt
+Example 2: Using cut to Extract Columns
+bash
+Copy code
+# Extract first and second columns from a space-separated file
+echo "DMC JAVA OSC Android iOS DBT Hybrid" | cut -d " " -f1,2
+

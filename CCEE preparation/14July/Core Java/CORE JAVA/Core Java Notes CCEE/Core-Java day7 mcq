@@ -1,0 +1,90 @@
+Java String Literal vs. Non-Literal:
+What is the main difference between String literals and String objects in Java?
+
+A) String literals are stored in the heap, while String objects are stored in the string pool.
+B) String literals are created using new operator, while String objects are created using double quotes.
+C) String literals are immutable, while String objects can be modified.
+D) String literals are interned by default, while String objects are not.
+Answer: A
+
+StringBuffer vs. StringBuilder:
+Which statement is true about StringBuffer and StringBuilder in Java?
+
+A) StringBuffer is immutable, while StringBuilder is mutable.
+B) StringBuffer is synchronized and thread-safe, while StringBuilder is not synchronized.
+C) StringBuilder is introduced in JDK 1.0, whereas StringBuffer is introduced in JDK 1.5.
+D) StringBuilder overrides equals() and hashCode() methods, whereas StringBuffer does not.
+Answer: B
+
+Java String Methods:
+Which method in the String class is used to check whether a String ends with a specific suffix?
+
+A) startsWith(String prefix)
+B) endsWith(String suffix)
+C) contains(CharSequence s)
+D) indexOf(String str)
+Answer: B
+
+StringTokenizer:
+What is the purpose of the countTokens() method in StringTokenizer?
+
+A) It returns the total number of characters in the input string.
+B) It counts the occurrences of specific tokens in the input string.
+C) It returns the number of tokens remaining to be read from the input string.
+D) It checks whether there are more tokens in the input string.
+Answer: C
+
+Code Snippets:
+String Concatenation in Java:
+
+java
+Copy code
+String s1 = "SunBeam";
+String s2 = "Pune/Karad";
+String s3 = s1.concat(s2);
+System.out.println(s3);
+Output: SunBeamPune/Karad
+
+Using StringBuilder in Java:
+
+java
+Copy code
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" World");
+System.out.println(sb.toString());
+Output: Hello World
+
+Using StringTokenizer in Java:
+
+java
+Copy code
+String text = "Java StringTokenizer Example";
+StringTokenizer tokenizer = new StringTokenizer(text);
+while (tokenizer.hasMoreTokens()) {
+    System.out.println(tokenizer.nextToken());
+}
+Output:
+
+Copy code
+Java
+StringTokenizer
+Example
+Regular Expression Matching in Java:
+
+java
+Copy code
+String text = "Hello, World! Welcome to Java.";
+Pattern pattern = Pattern.compile("\\b\\w+\\b");
+Matcher matcher = pattern.matcher(text);
+while (matcher.find()) {
+    System.out.println("Found: " + matcher.group());
+}
+Output:
+
+vbnet
+Copy code
+Found: Hello
+Found: World
+Found: Welcome
+Found: to
+Found: Java

@@ -1,0 +1,137 @@
+MySQL Basics and Tools
+What is the full form of SQL?
+
+a) Sequential Query Language
+b) Structured Query Language
+c) Standard Query Language
+d) System Query Language
+Answer: b) Structured Query Language
+Which tool is used for interacting with MySQL server through a command-line interface?
+
+a) MySQL Workbench
+b) MySQL Notifier
+c) MySQL Command Line Client
+d) MySQL Enterprise Monitor
+Answer: c) MySQL Command Line Client
+Which MySQL tool provides monitoring, alerting, and advisor functionalities?
+
+a) MySQL Workbench
+b) MySQL Enterprise Monitor
+c) MySQL Query Analyzer
+d) MySQL Notifier
+Answer: b) MySQL Enterprise Monitor
+MySQL Datatypes
+Which of the following is a character data type in MySQL?
+
+a) INT
+b) DATE
+c) VARCHAR
+d) DECIMAL
+Answer: c) VARCHAR
+Which data type would you use to store a large binary object in MySQL?
+
+a) CHAR
+b) BLOB
+c) ENUM
+d) BIT
+Answer: b) BLOB
+Basic SQL Commands
+What does the following SQL command do?
+
+sql
+Copy code
+CREATE TABLE emp (
+    Empno CHAR(4),
+    Ename VARCHAR(25),
+    Sal FLOAT,
+    City VARCHAR(15),
+    Dob DATE
+);
+a) Deletes a table named emp
+b) Creates a new table named emp
+c) Updates a table named emp
+d) Inserts data into a table named emp
+Answer: b) Creates a new table named emp
+Which SQL command is used to retrieve all rows from the table 'emp'?
+
+a) INSERT INTO emp
+b) UPDATE emp
+c) SELECT * FROM emp
+d) DELETE FROM emp
+Answer: c) SELECT * FROM emp
+Functions
+Which function would you use to convert a string to uppercase in MySQL?
+
+a) LOWER()
+b) UPPER()
+c) CONCAT()
+d) LENGTH()
+Answer: b) UPPER()
+What does the following query return?
+
+sql
+Copy code
+SELECT SYSDATE() FROM dual;
+a) The current time
+b) The current date and time
+c) The current user
+d) The current database
+Answer: b) The current date and time
+Sub-queries and Indexes
+Which command would you use to show indexes from the table 'emp'?
+a) SHOW DATABASES;
+b) SHOW INDEXES FROM emp;
+c) DESC emp;
+d) SHOW TABLES;
+Answer: b) SHOW INDEXES FROM emp;
+Alter Table Commands
+How do you add a new column 'panno' to the table 'emp'?
+a) ALTER TABLE emp MODIFY panno CHAR(10);
+b) ALTER TABLE emp ADD panno CHAR(10);
+c) ALTER TABLE emp DROP COLUMN panno;
+d) ALTER TABLE emp RENAME COLUMN panno TO pan;
+Answer: b) ALTER TABLE emp ADD panno CHAR(10);
+Constraints
+Which command is used to list all table constraints in the current database?
+a) DESC emp;
+b) SHOW DATABASES;
+c) SELECT * FROM information_schema.table_constraints;
+d) SHOW TABLES;
+Answer: c) SELECT * FROM information_schema.table_constraints;
+Stored Procedures and Functions
+How do you create a stored procedure in MySQL?
+
+a) CREATE PROCEDURE proc_name()
+b) CREATE FUNCTION proc_name()
+c) CREATE TRIGGER proc_name()
+d) CREATE EVENT proc_name()
+Answer: a) CREATE PROCEDURE proc_name()
+Which statement correctly calls a stored procedure named 'abc'?
+
+a) EXECUTE abc();
+b) CALL abc();
+c) RUN abc();
+d) START abc();
+Answer: b) CALL abc();
+Exercises
+What does the following stored procedure do?
+sql
+Copy code
+DELIMITER //
+CREATE PROCEDURE compute_area_perimeter()
+BEGIN
+    DECLARE L INT DEFAULT 10;
+    DECLARE W INT DEFAULT 5;
+    DECLARE P INT;
+    DECLARE A INT;
+    SET P = 2 * (L + W);
+    SET A = L * W;
+    SELECT P, A;
+END //
+DELIMITER ;
+CALL compute_area_perimeter();
+a) Calculates and returns the perimeter and area of a rectangle
+b) Inserts values into a table
+c) Deletes a table
+d) Modifies a column in a table
+Answer: a) Calculates and returns the perimeter and area of a rectangle

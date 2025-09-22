@@ -1,0 +1,127 @@
+
+Memory updated
+Here are some MCQ questions along with answers based on the sessions provided for the CDAC ACTS course on OS Concepts and Linux Programming (PG-DMC March 2024):
+
+Session 1: Introduction to Operating System
+What is the role of an operating system?
+
+A) Only manages hardware resources
+B) Provides an interface for users to interact with the computer
+C) Executes user programs
+D) Both B and C
+Answer: D
+Which of the following is not a system component or service provided by an operating system?
+
+A) Process management
+B) File management
+C) Web browsing
+D) Memory management
+Answer: C
+Session 2: Process - Architecture
+Which state of a process signifies that it has been created and is waiting to be assigned to a processor?
+
+A) Running
+B) Ready
+C) New
+D) Waiting
+Answer: C
+What is multithreading?
+
+A) Executing multiple processes simultaneously
+B) Executing multiple threads simultaneously within a process
+C) Running multiple programs on a computer
+D) Allowing users to multitask
+Answer: B
+Session 3: CPU Scheduling
+Which scheduling criterion aims to provide a balanced distribution of the CPU time among all processes?
+
+A) Response time
+B) Turnaround time
+C) Throughput
+D) Fairness
+Answer: D
+Which scheduling algorithm uses a fixed time slice for each process?
+
+A) Round Robin
+B) Shortest Job Next (SJN)
+C) Priority Scheduling
+D) First-Come, First-Served (FCFS)
+Answer: A
+Session 4, 5 & 6: Memory Management
+Which memory allocation technique divides memory into fixed-sized partitions?
+
+A) Contiguous allocation
+B) Paging
+C) Segmentation
+D) Virtual memory
+Answer: A
+Which memory management scheme allows programs to be larger than physical memory?
+
+A) Paging
+B) Swapping
+C) Demand paging
+D) Thrashing
+Answer: C
+Session 7: File System Interface and Implementation
+What is the purpose of file system mounting?
+
+A) To allocate space to files
+B) To provide access to files on a disk
+C) To create file directories
+D) To delete unwanted files
+Answer: B
+Which disk scheduling algorithm reduces the time spent seeking the disk arm across all tracks?
+
+A) FCFS
+B) SSTF (Shortest Seek Time First)
+C) SCAN
+D) C-SCAN
+Answer: B
+Session 8: Linux History and Operation
+Which year did Linus Torvalds release the first version of the Linux kernel?
+
+A) 1983
+B) 1989
+C) 1991
+D) 1995
+Answer: C
+Which command is used to display the contents of a file?
+
+A) cat
+B) mv
+C) rm
+D) mkdir
+Answer: A
+Session 9: Access Control and vi Editor
+Which command is used to change the ownership of a file?
+
+A) chmod
+B) chown
+C) chgrp
+D) chmode
+Answer: B
+What is the purpose of the vi editor's command mode?
+
+A) Navigation and cursor movement
+B) Text insertion and editing
+C) Command execution
+D) Both A and C
+Answer: D
+Session 10 & 11: Shell Scripting
+Which shell is often referred to as BASH?
+
+A) Bourne Again Shell
+B) Korn Shell
+C) C Shell
+D) Z Shell
+Answer: A
+What does the following shell script command do?
+
+bash
+Copy code
+if [ -f myfile.txt ]; then echo "File exists"; else echo "File does not exist"; fi
+A) Checks if myfile.txt exists and prints "File exists" if true
+B) Creates a new file named myfile.txt
+C) Deletes myfile.txt if it exists
+D) Renames myfile.txt to a new name
+Answer: A

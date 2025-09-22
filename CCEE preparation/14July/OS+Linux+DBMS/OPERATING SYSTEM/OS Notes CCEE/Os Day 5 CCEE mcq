@@ -1,0 +1,39 @@
+Question: What is the primary function of Memory Management Unit (MMU) in a computer system?
+
+A) Allocates disk space to processes
+B) Manages file system operations
+C) Translates virtual addresses to physical addresses
+D) Controls CPU scheduling
+Answer: C) Translates virtual addresses to physical addresses
+
+Question: Which memory management scheme divides memory into fixed-sized partitions?
+
+A) Paging
+B) Segmentation
+C) Contiguous Allocation
+D) Demand Paging
+Answer: C) Contiguous Allocation
+
+Question: What is the term for the situation where memory space allocated to a process is not fully utilized, leading to wastage?
+
+A) Internal fragmentation
+B) External fragmentation
+C) Compaction
+D) Demand Paging
+Answer: A) Internal fragmentation
+
+Question: Which paging algorithm swaps out the page that will not be used for the longest duration in the future?
+
+A) FIFO
+B) Optimal
+C) LRU (Least Recently Used)
+D) Dirty Bit
+Answer: B) Optimal
+
+Question: What is the purpose of TLB (Translation Look-Aside Buffer) in paging systems?
+
+A) Manages disk swapping
+B) Stores page-table entries
+C) Speeds up address translation
+D) Implements page replacement algorithms
+Answer: C) Speeds up address translation

@@ -1,0 +1,112 @@
+What is a functional interface in Java?
+
+A. An interface with exactly one abstract method
+B. An interface that can have multiple abstract methods
+C. An interface with no abstract methods
+D. An interface that inherits from another interface
+Answer: A. An interface with exactly one abstract method
+
+Which annotation is used to denote a functional interface in Java?
+
+A. @Functional
+B. @SingleAbstractMethod
+C. @FunctionalInterface
+D. @Lambda
+Answer: C. @FunctionalInterface
+
+What does a lambda expression consist of in Java?
+
+A. A parameter list and a method body
+B. A parameter list and a return statement
+C. A return type and a method body
+D. A variable and a method body
+Answer: A. A parameter list and a method body
+
+How are lambda expressions typically used in Java?
+
+A. To create new classes
+B. To define instance methods
+C. To create anonymous functions
+D. To implement static methods
+Answer: C. To create anonymous functions
+
+Which package in Java provides utilities for functional-style operations on streams of values?
+
+A. java.util.stream
+B. java.util.collections
+C. java.util.functional
+D. java.util.lambda
+Answer: A. java.util.stream
+
+What does a terminal operation do in a stream pipeline in Java?
+
+A. It transforms elements in the stream
+B. It closes the stream and makes it unusable
+C. It applies a condition to filter elements
+D. It creates a new stream
+Answer: B. It closes the stream and makes it unusable
+
+Which method in the Stream API is used to apply a transformation to each element of the stream?
+
+A. map()
+B. filter()
+C. reduce()
+D. forEach()
+Answer: A. map()
+
+What does the filter() method do in the Stream API?
+
+A. It transforms elements in the stream
+B. It applies a condition to filter elements
+C. It closes the stream and makes it unusable
+D. It creates a new stream
+Answer: B. It applies a condition to filter elements
+
+Which method in the Stream API is used to reduce all elements of a stream into a single value?
+
+A. reduce()
+B. map()
+C. forEach()
+D. filter()
+Answer: A. reduce()
+
+In Java, how can you obtain a stream from a collection?
+
+A. Using collection.stream()
+B. Using collection.iterator()
+C. Using collection.getStream()
+D. Using collection.forEach()
+Answer: A. Using collection.stream()
+
+Code Snippets
+Here are a few code snippets demonstrating the use of lambda expressions and streams in Java:
+
+Using Lambda Expression with forEach:
+
+java
+Copy code
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+numbers.forEach(n -> System.out.println(n));
+Filtering with Lambda Expression:
+
+java
+Copy code
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+numbers.stream()
+       .filter(n -> n % 2 == 0)
+       .forEach(System.out::println);
+Mapping with Lambda Expression:
+
+java
+Copy code
+List<String> names = Arrays.asList("John", "Jane", "Doe");
+List<Integer> nameLengths = names.stream()
+                                 .map(String::length)
+                                 .collect(Collectors.toList());
+Reducing with Lambda Expression:
+
+java
+Copy code
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+int sum = numbers.stream()
+                 .reduce(0, (a, b) -> a + b);

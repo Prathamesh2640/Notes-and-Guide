@@ -1,0 +1,68 @@
+CDAC DMC CCEE MCQ Questions and Answers
+Question: What is the output of the following Java code?
+
+java
+Copy code
+public class Test {
+    public static void main(String[] args) {
+        String str = "Hello";
+        str.concat(" World");
+        System.out.println(str);
+    }
+}
+A) Hello
+B) Hello World
+C) World
+D) Compilation Error
+Answer: A) Hello
+
+Explanation: The concat method in Java strings does not modify the original string but returns a new string. Since str.concat(" World") is not assigned back to str, the original value of str remains unchanged.
+
+Question: What is the correct way to declare a lambda expression for a functional interface MyInterface that takes two integers and returns their sum?
+
+A) (int x, int y) -> x + y
+B) int sum(int x, int y) -> { return x + y; }
+C) int sum(int x, int y) => x + y;
+D) (int x, y) -> x + y
+Answer: A) (int x, int y) -> x + y
+
+Explanation: Option A correctly represents a lambda expression for adding two integers.
+
+Question: What does the finalize() method in Java do?
+
+A) It is used to free the resources before an object is garbage collected.
+B) It immediately deletes the object from memory.
+C) It is called explicitly to finalize an object.
+D) It is used to allocate memory for an object.
+Answer: A) It is used to free the resources before an object is garbage collected.
+
+Explanation: The finalize() method in Java is called by the garbage collector before an object is destroyed to perform cleanup operations.
+
+Question: Which of the following is a valid declaration of a static method in an interface in Java 8?
+
+A) static void method();
+B) default static void method() {}
+C) static final void method() {}
+D) void static method();
+Answer: B) default static void method() {}
+
+Explanation: Starting from Java 8, interfaces can have static methods, which are declared using the static keyword. The default keyword is optional and is used for default implementations.
+
+Question: What will be the output of the following Java code?
+
+java
+Copy code
+public class Test {
+    public static void main(String[] args) {
+        String str1 = "Hello";
+        String str2 = new String("Hello");
+        System.out.println(str1 == str2);
+    }
+}
+A) true
+B) false
+C) Compilation Error
+D) Runtime Exception
+Answer: B) false
+
+Explanation: str1 and str2 are two different string objects. The == operator checks for reference equality, not content equality.

@@ -1,0 +1,155 @@
+
+Creating multiple-choice questions (MCQs) based on the given content on Object-Oriented Programming with Java 8 is a great way to reinforce learning. Below are some MCQs, including both theoretical and code snippets, along with their answers.
+
+MCQs on Data Types
+Which of the following is a primitive data type in Java?
+
+a) String
+b) Array
+c) int
+d) Interface
+Answer: c) int
+
+What is the size of a char data type in Java?
+
+a) 8 bits
+b) 16 bits
+c) 32 bits
+d) 64 bits
+Answer: b) 16 bits
+
+Which of the following can hold a larger range of values?
+
+a) int
+b) float
+c) long
+d) double
+Answer: d) double
+
+MCQs on Wrapper Classes
+Which method is used to parse a String into an int?
+
+a) Integer.parseString()
+b) Integer.parseInt()
+c) String.parseInt()
+d) String.toInt()
+Answer: b) Integer.parseInt()
+
+What will be the output of the following code snippet?
+
+java
+Copy code
+String str = "123";
+int num = Integer.parseInt(str);
+System.out.println(num);
+a) "123"
+b) 123
+c) Compilation Error
+d) NumberFormatException
+Answer: b) 123
+
+MCQs on Widening and Narrowing
+What is the process of converting a lower data type to a higher data type called?
+
+a) Narrowing
+b) Casting
+c) Widening
+d) Boxing
+Answer: c) Widening
+
+Which of the following code snippets demonstrates narrowing?
+
+a) double d = 10; int i = (int)d;
+b) int i = 10; double d = i;
+c) float f = 10; double d = f;
+d) char c = 'a'; int i = c;
+Answer: a) double d = 10; int i = (int)d;
+
+MCQs on Boxing and Unboxing
+What is the process of converting a primitive type to its corresponding wrapper class called?
+
+a) Unboxing
+b) Boxing
+c) Widening
+d) Narrowing
+Answer: b) Boxing
+
+What will be the output of the following code snippet?
+
+java
+Copy code
+Integer num = 10; // Boxing
+int n = num; // Unboxing
+System.out.println(n);
+a) 10
+b) "10"
+c) Compilation Error
+d) NullPointerException
+Answer: a) 10
+
+MCQs on Control Statements
+Which control statement is used to exit from a loop immediately?
+
+a) continue
+b) break
+c) return
+d) exit
+Answer: b) break
+
+What will be the output of the following code snippet?
+
+java
+Copy code
+for (int i = 0; i < 5; i++) {
+    if (i == 3) {
+        break;
+    }
+    System.out.print(i + " ");
+}
+a) 0 1 2 3
+b) 0 1 2
+c) 0 1 2 3 4
+d) 0 1
+Answer: b) 0 1 2
+
+MCQs on Scanner Class
+Which method of the Scanner class is used to read an integer value from the console?
+
+a) next()
+b) nextInt()
+c) nextLine()
+d) nextDouble()
+Answer: b) nextInt()
+
+What will be the output of the following code snippet if the user inputs "John"?
+
+java
+Copy code
+Scanner input = new Scanner(System.in);
+System.out.print("Enter your name: ");
+String name = input.next();
+System.out.println("Your name is " + name);
+input.close();
+a) Enter your name: John Your name is John
+b) Enter your name: John
+Your name is John
+c) Your name is John
+d) Compilation Error
+Answer: b) Enter your name: John
+Your name is John
+
+Explanation of Concepts:
+Data Types: Java has both primitive (e.g., int, char, boolean) and reference types (e.g., String, arrays).
+Wrapper Classes: These classes wrap primitive data types into objects (e.g., Integer for int).
+Widening and Narrowing: Widening converts a smaller data type to a larger one (e.g., int to double), while narrowing converts a larger data type to a smaller one (e.g., double to int).
+Boxing and Unboxing: Boxing is the conversion of a primitive type to a corresponding wrapper class object, while unboxing is the reverse process.
+Control Statements: These include if, switch, loops (for, while, do-while), and jump statements (break, continue).
+Scanner Class: This class is used to read input from various sources, including user input from the console.
+These questions and explanations should help in understanding and applying the fundamental concepts of Java programming covered in the document.
+
+
+
+
+
+
+
